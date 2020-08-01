@@ -1,0 +1,19 @@
+body {
+	background: #FFF;
+	color: #000;
+	font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin: 10px;
+	padding: 0
+}
+
+.sel-0{display:none;}
+textarea{display:block;}
+.submitbar{background:#ccc;margin:5px 0;padding:4px;}
+
+#data_result table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+}
+#data_result td  {
+  border: 1px solid #ddd;
+ }

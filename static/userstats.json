@@ -1,0 +1,95 @@
+[
+    {
+        "$match": {
+            "orgId": 1068,
+            "useCase": "production",
+            "userState": {
+                "$in": [
+                    1,
+                    2,
+                    -2,
+                    -5,
+                    -7
+                ]
+            }
+        }
+    },
+    {
+        "$unwind": {
+            "path": "$programProfiles"
+        }
+    },
+    {
+        "$lookup": {
+            "from": "surveyassignments",
+            "localField": "_id" ,
+            "foreignField": "_user",
+            "as": "sa"
+        }
+    },
+    {
+        "$lookup": {
+            "from": "surveyanswers",
+            "localField": "userId",
+            "foreignField": "userId",
+            "as": "sans"
+        }
+    },
+    {
+        "$lookup": {
+            "from": "activities",
+            "let": {
+                "userId": "$userId"
+            },
+            "pipeline": [
+                {
+                    "$match": {
+                        "eventCategory": "changeHistory",
+                        "eventName": "subjectId",
+                        "$expr": {
+                            "$and": [
+                                {
+                                    "$eq": [
+                                        "$userId",
+                                        "$$userId"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "$project": {
+                        "subjectId": "$message.newValue"
+                    }
+                }
+            ],
+            "as": "subject"
+        }
+    },
+    {
+        "$unwind": {
+            "path": "$subject",
+            "preserveNullAndEmptyArrays": true
+        }
+    },
+    {
+        "$project": {
+            "userId": 1,
+            "userState": 1,
+            "dateSignedUp": 1,
+            "subject": "$subject.subjectId",
+            "dateLastLogin": 1,
+            "deactivatedAt": 1,
+            "site": "$programProfiles.progId",
+            "siteName": "$programProfiles.programName",
+            "assignments": {
+                "$size": "$sa"
+            },
+            "answers": {
+                "$size": "$sans"
+            },
+            "_id": 0
+        }
+    }
+]

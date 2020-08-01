@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en-US">
+    <head><meta charset="UTF-8">
+        <title>View Data</title>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"> </script>
+        <script src="/static/app1.js"> </script>
+
+        <script type="text/javascript" src="http://caldwell.github.io/renderjson/renderjson.js"> </script>
+        <link href="/static/tab.css" rel="stylesheet" >
+        <link rel="stylesheet" href="/static/app1.css">
+    </head>
+    <body>
+        <h1>Upload and View Data</h1>
+        <form method=post enctype=multipart/form-data>
+           <p>
+                <label> Type text <input type ='checkbox' name='typtxt' value=1 onchange="handlers.toggleFormOptions(ev,this)"/></label>
+                <label>Type
+                    <select class="txtels" name="contenttype" onchange="handlers.toggleFormOptions(ev,this)">
+                        <option value='json'>Json</option>
+                        <option value='csv'>comma delimeted data</option>
+                        <option value='tsv'>tab delimeted data</option>
+                        <option value='other'>delimeted data</option>
+                    </select>
+                </label>
+                <label>delimiter
+                   <input name='delimiter' size=2 class="txtels" value="," >
+                </label>
+    
+            </p>
+            <textarea name="message" rows="8" cols="50"  onchange="handlers.inspectdata(ev,this)">
+            </textarea>
+            <hr/>
+            <label> Upload file <br/><input type="file" id="file" name="file"/></label>
+            <hr/>
+            <div class="submitbar">
+              <input type="submit" value="Upload" onsubmit=""/>
+            </div>
+         </form>
+        <div class="section section-meta" model="meta">
+            <h4 class="section-title">Meta Info</h4>
+            <div id="data_meta" class="section-data" displaymode="json">
+               $meta
+            </div>
+        </div>
+        <hr/>
+        <div class="section section-data" model="data">
+            <h4>Data</h4>
+            <div class="downlinks section-bar">
+                <a href="/downloads?mode=csv&rkey=$rkey" download="csv">
+                    <img src="/static/downloadcsv.png" alt="csv" width="24" height="24">
+                </a>
+                <a href="/downloads?mode=xls&rkey=$rkey" download="xls">
+                    <img src="/static/downloadxls.png" alt="csv" width="24" height="24">
+                </a>
+            </div>
+    
+             <div id="data_result"  class="section-data tableContainer">
+                $result
+             </div>
+        </div>
+    </body>
+</html>

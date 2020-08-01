@@ -1,0 +1,86 @@
+pool started 2020-06-28 21:33:44.926348
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-20___15-20-52.gt3x.pkl 2020-06-28 21:33:44.926368
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-20___15-20-52.gt3x.pkl 18.09090495109558 2020-06-28 21:34:03.017277 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-20___16-59-01.gt3x.pkl 2020-06-28 21:34:03.017401
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-20___16-59-01.gt3x.pkl 15.309590101242065 2020-06-28 21:34:18.326996 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-20___22-34-07.gt3x.pkl 2020-06-28 21:34:18.327123
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-20___22-34-07.gt3x.pkl 295.0607159137726 2020-06-28 21:39:13.387857 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-25___12-23-58.gt3x.pkl 2020-06-28 21:39:13.388251
+/Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/library/extract_features_gait.py:321: RankWarning: Polyfit may be poorly conditioned
+  df, idx_stride, col_lag, col_corr_new)
+/Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/library/extract_features_gait.py:351: RankWarning: Polyfit may be poorly conditioned
+  df, step.idx, col_lag, col_corr)
+/Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/library/extract_features_gait.py:351: RankWarning: Polyfit may be poorly conditioned
+  df, step.idx, col_lag, col_corr)
+/Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/library/extract_features_gait.py:351: RankWarning: Polyfit may be poorly conditioned
+  df, step.idx, col_lag, col_corr)
+/Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/library/extract_features_gait.py:358: RankWarning: Polyfit may be poorly conditioned
+  df, stride.idx, col_lag, col_corr)
+/Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/library/extract_features_gait.py:321: RankWarning: Polyfit may be poorly conditioned
+  df, idx_stride, col_lag, col_corr_new)
+----------------------------------------------
+Error Type: <class 'SystemExit'>
+Filename: extract_features_gait.py
+Line Number: 333
+----------------------------------------------
+Uncaught Exception: Input argument prominence must be positive
+----------------------------------------------
+----------------------------------------------
+Error Type: <class 'SystemExit'>
+Filename: extract_features_walk.py
+Line Number: 210
+----------------------------------------------
+Uncaught Exception: 
+----------------------------------------------
+----------------------------------------------
+Error Type: <class 'SystemExit'>
+Filename: extract_features_walk.py
+Line Number: 320
+----------------------------------------------
+Uncaught Exception: 
+----------------------------------------------
+2020-06-28 23:37:20.491034
+
+instance=prod
+useDb=True
+produid=sharma
+copyToS3=False
+s3base=koneksa-r-and-d
+prodpwd=lMZRzn3UiS7v8uW4
+prodconn=@cluster1.nav18.mongodb.net/koneksa_mvp?retryWrites\=true&w\=majority
+
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-25___16-58-41.gt3x.pkl 2020-06-28 23:37:20.491056
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-25___16-58-41.gt3x.pkl 46.691107988357544 2020-06-28 23:38:07.182172 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-27___15-57-08.gt3x.pkl 2020-06-28 23:38:07.182617
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-27___15-57-08.gt3x.pkl 471.57980489730835 2020-06-28 23:45:58.762425 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-27___17-59-41.gt3x.pkl 2020-06-28 23:45:58.762757
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-27___17-59-41.gt3x.pkl 24.596428632736206 2020-06-28 23:46:23.359189 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-27___21-51-47.gt3x.pkl 2020-06-28 23:46:23.360002
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-02-27___21-51-47.gt3x.pkl 38.800610065460205 2020-06-28 23:47:02.160622 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-03___17-04-48.gt3x.pkl 2020-06-28 23:47:02.161073
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-03___17-04-48.gt3x.pkl 54.99578595161438 2020-06-28 23:47:57.156862 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-04___14-33-34.gt3x.pkl 2020-06-28 23:47:57.157389
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-04___14-33-34.gt3x.pkl 320.3596239089966 2020-06-28 23:53:17.517017 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-04___17-15-19.gt3x.pkl 2020-06-28 23:53:17.517342
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-04___17-15-19.gt3x.pkl 29.03876304626465 2020-06-28 23:53:46.556112 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-05___11-26-35.gt3x.pkl 2020-06-28 23:53:46.556391
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-05___11-26-35.gt3x.pkl 265.8377559185028 2020-06-28 23:58:12.394152 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-05___13-22-14.gt3x.pkl 2020-06-28 23:58:12.394402
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-05___13-22-14.gt3x.pkl 16.559239864349365 2020-06-28 23:58:28.953649 done
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-09___17-38-13.gt3x.pkl 2020-06-28 23:58:28.953975
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-09___17-38-13.gt3x.pkl 32.32427215576172 2020-06-28 23:59:01.278252 done
+
+inspectpkl start /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-09___13-13-29.gt3x.pkl 2020-06-29 00:07:21.933123
+inspectpkl time /Users/atulsharma/code/ds/compare_assessment_and_feature_extraction/compare/gt3x/TAS1F23160468_2020-03-09___13-13-29.gt3x.pkl 4265.47900000000  2020-06-29 00:07:21.933123 done
+
+I wasn't getting this exception prior to the merge.
+It happens towards the end of processing .. I was trying to debug but it takes few hours before it gets to this point while debugging .. 
+ will keep trying to debug to figure out whats going ..
+ Was wondering if the error message give you an hint about why its happening?
+
+
+
+
+
+
+
