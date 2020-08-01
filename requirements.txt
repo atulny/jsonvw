@@ -1,0 +1,7 @@
+###### Requirements without Version Specifiers ######`
+pandas
+werkzeug
+flask
+js_if
+magic
+mimetypes

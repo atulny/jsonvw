@@ -278,7 +278,7 @@ class FileMultiDict(MultiDict):
 #         if file:
 #             mimetype = file.content_type
 #             filename = werkzeug.secure_filename(file.filename)
-                get_mimetype(request.files['YOUR_FILE_KEY'].stream.read(MAX_LENGTH))
+#                get_mimetype(request.files['YOUR_FILE_KEY'].stream.read(MAX_LENGTH))
 
 #             file.save(os.path.join(UPLOAD_FOLDER, filename)
 #
