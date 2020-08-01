@@ -4,6 +4,5 @@ werkzeug
 flask
 quickjs
 python-magic
-mimetypes
 openpyxl
 xlsxwriter
