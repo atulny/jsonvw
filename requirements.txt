@@ -3,5 +3,5 @@ pandas
 werkzeug
 flask
 quickjs
-magic
+python-magic
 mimetypes
