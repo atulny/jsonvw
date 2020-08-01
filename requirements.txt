@@ -2,6 +2,6 @@
 pandas
 werkzeug
 flask
-js_if
+quickjs
 magic
 mimetypes
