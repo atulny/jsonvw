@@ -337,10 +337,10 @@ def upload_file():
 
 import click
 
-from flask_socketio import SocketIO,emit
+#from flask_socketio import SocketIO,emit
 
 from flask import send_from_directory
-socketio = SocketIO(app)
+#socketio = SocketIO(app)
 
 @app.route('/uploads/<filename>')
 def uploaded_file(filename):
