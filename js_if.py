@@ -52,7 +52,7 @@ function parse(data){
 
 #jsonparse = Function('parse', js )
 ctx = py_mini_racer.MiniRacer()
-ctx.eval(jsn)
+ctx.eval(js)
 
 
 def jsonparse(d):
