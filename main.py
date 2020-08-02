@@ -8,7 +8,7 @@ import pandas as pd
 import magic
 import werkzeug
 from flask import Flask, flash, request, redirect, url_for
-from pandas.io.json import json_normalize
+from pandas import json_normalize
 from werkzeug.utils import secure_filename
 from waitress import serve
 from os import path
