@@ -229,7 +229,7 @@ def upload_file():
                  content=request.form.get('message')
                  )
         # check if the post request has the file part
-        if 'file'   in request.files and request.files['file'] != '':
+        if 'file'   in request.files and str(request.files['file'].filename).strip():
             file = request.files['file']
             print("has file" , file.filename ,"#")
 
