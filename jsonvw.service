@@ -1,0 +1,14 @@
+[Unit]
+Description=Json csv web application
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/app/jsonvw
+Environment=FLASK_CONFIG=production
+
+ExecStart=/home/ubuntu/app/py3/bin/python3 /home/ubuntu/app/jsonvw/main.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
