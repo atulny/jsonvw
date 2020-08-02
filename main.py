@@ -10,6 +10,7 @@ import werkzeug
 from flask import Flask, flash, request, redirect, url_for
 from pandas.io.json import json_normalize
 from werkzeug.utils import secure_filename
+from waitress import serve
 from os import path
 from js_if import jsonparse
 
@@ -348,7 +349,10 @@ def uploaded_file(filename):
 @click.option("--port", "-p", default=5000, help="listening port")
 def run(port):
     #app.run(debug=True, port=port)
-    socketio.run(app)
+    #RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+    app.secret_key="i am bad"
+    serve(app)
+    #socketio.run(app)
     pass
 
 

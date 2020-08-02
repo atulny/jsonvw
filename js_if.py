@@ -1,5 +1,5 @@
-from quickjs import Function
-
+#from quickjs import Function
+from py_mini_racer import py_mini_racer
 jsn = """
 function inspect(v){
   var t=[v==null?'nill':typeof(v),"primitive"]
@@ -50,7 +50,12 @@ function parse(data){
 """
 
 
-jsonparse = Function('parse', js )
+#jsonparse = Function('parse', js )
+ctx = py_mini_racer.MiniRacer()
+ctx.eval(jsn)
 
+
+def jsonparse(d):
+    return ctx.call("parse",d)
 
 
