@@ -245,18 +245,20 @@ def upload_file():
         if  dd.file:
             ext = dd.data.ext
             if ext:
-               if ext=="csv" or ext=="json":
+               if ext=="csv" or ext=="json" or ext.startswith("xls"):
                    filename = dd.file.filename
                    dd.file.save(os.path.join(UPLOAD_FOLDER, filename))
                    if ext=="csv":
                        df=pd.read_csv(path.join(UPLOAD_FOLDER, filename))
 
+                   elif ext.startswith("xls"):
+                    pass
                    else:
                        df=pd.read_json(path.join(UPLOAD_FOLDER, filename))
 
                    meta["columns"]=df.dtypes.apply(lambda x: re.sub('\d+$','',x.name)).to_dict()
                    CACHE["_"]= df
-                   r["result"]=df.to_html(index=False)
+                   r["result"]=df.head(100).to_html(index=False)
 
 
         else:
